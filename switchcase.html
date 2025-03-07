@@ -11,6 +11,10 @@
     <script>
         let dataDeHoje = new Date().getDay();
 
+        // Usando If-ElseIf-Else
+
+        document.write('<p>');
+
         if (dataDeHoje == 0) {
             document.write('Hoje é domingo.');
         } else if (dataDeHoje == 1) {
@@ -28,6 +32,13 @@
         } else {
             document.write('Hoje é um bom dia.');
         }
+
+        document.write('</p>');
+
+
+        // Usando Switch-case
+
+        document.write('<p>');
 
         switch (dataDeHoje) {
             case 0:
@@ -56,8 +67,30 @@
                 document.write('Hoje é um outro dia.');
                 break;
         }
+        
+        document.write('</p>');
+            
 
-        document.write(dataDeHoje);
+        // Usando operadores ternários
+
+        let diaDaSemana =   (dataDeHoje == 0) ? "domingo" :
+                            (dataDeHoje == 1) ? "segunda-feira" :
+                            (dataDeHoje == 2) ? "terça-feira" :
+                            (dataDeHoje == 3) ? "quarta-feira" :
+                            (dataDeHoje == 4) ? "quinta-feira" :
+                            (dataDeHoje == 5) ? "sexta-feira" :
+                            (dataDeHoje == 6) ? "sábado" :
+                            "dia da semana inválido";
+        
+        document.write('<p>Hoje é ' + diaDaSemana, '.</p>');
+
+
+        // Usando uma lista
+
+        diasDaSemana = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado'];
+
+        document.write('<p>Hoje é ' + diasDaSemana[dataDeHoje] + '.</p>');
+
 
     </script>
 </body>
