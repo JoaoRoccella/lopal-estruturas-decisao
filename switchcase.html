@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch-case</title>
+</head>
+
+<body>
+    <script>
+        let dataDeHoje = new Date().getDay();
+
+        if (dataDeHoje == 0) {
+            document.write('Hoje é domingo.');
+        } else if (dataDeHoje == 1) {
+            document.write('Hoje é segunda-feira.');
+        } else if (dataDeHoje == 2) {
+            document.write('Hoje é terça-feira.');
+        } else if (dataDeHoje == 3) {
+            document.write('Hoje é quarta-feira.');
+        } else if (dataDeHoje == 4) {
+            document.write('Hoje é quinta-feira.');
+        } else if (dataDeHoje == 5) {
+            document.write('Hoje é sexta-feira.');
+        } else if (dataDeHoje == 6) {
+            document.write('Hoje é sábado.');
+        } else {
+            document.write('Hoje é um bom dia.');
+        }
+
+        switch (dataDeHoje) {
+            case 0:
+                document.write('Hoje é domingo.');
+                break;
+            case 1:
+                document.write('Hoje é segunda-feira.');
+                break;
+            case 2:
+                document.write('Hoje é terça-feira.');
+                break;
+            case 3:
+                document.write('Hoje é quarta-feira.');
+                break;
+            case 4:
+                document.write('Hoje é quinta-feira.');
+                break;
+            case 5:
+                document.write('Hoje é sexta-feira.');
+                break;
+            case 6:
+                document.write('Hoje é sábado.');
+                break;
+                
+            default:    
+                document.write('Hoje é um outro dia.');
+                break;
+        }
+
+        document.write(dataDeHoje);
+
+    </script>
+</body>
+
+</html>
