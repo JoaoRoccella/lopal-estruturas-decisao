@@ -13,7 +13,7 @@
 
         // Usando If-ElseIf-Else
         // Programação imperativa
-
+        document.write('<h1>Com if-else-if:</h1>');
         document.write('<p>');
 
         if (dataDeHoje == 0) {
@@ -40,6 +40,7 @@
         // Usando Switch-case
         // Programação imperativa
 
+        document.write('<h1>Com switch-case:</h1>');
         document.write('<p>');
 
         switch (dataDeHoje) {
@@ -67,14 +68,15 @@
                 
             default:    
                 document.write('Hoje é um outro dia.');
-                break;
         }
         
         document.write('</p>');
             
 
         // Usando operadores ternários
-        // Programação menos imperativa
+        // Programação imperativa
+
+        document.write('<h1>Com operador ternário:</h1>');
 
         const diaDaSemana = (dataDeHoje == 0) ? "domingo" :
                             (dataDeHoje == 1) ? "segunda-feira" :
@@ -87,9 +89,10 @@
         
         document.write('<p>Hoje é ' + diaDaSemana, '.</p>');
 
-
-        // Usando uma lista
+        // Usando um array
         // Programação declarativa
+
+        document.write('<h1>Com um array</h1>');
 
         const diasDaSemana = ['domingo', 'segunda-feira', 'terça-feira', 'quarta-feira', 'quinta-feira', 'sexta-feira', 'sábado'];
 
@@ -99,14 +102,22 @@
         // Usando um mapa
         // Programação declarativa
 
-        const diasMap = new Map([
-            [0, "domingo"], [1, "segunda-feira"], [2, "terça-feira"],
-            [3, "quarta-feira"], [4, "quinta-feira"], [5, "sexta-feira"],
-            [6, "sábado"]
+        document.write('<h1>Com Mapa (Map)</h1>');
+        const mapaDeDias = new Map([
+            [0, 'domingo'], 
+            [2, 'terça-feira'],
+            [1, 'segunda-feira'],
+            [4, 'quinta-feira'],
+            [3, 'quarta-feira'],
+            [5, 'sexta-feira'],
+            [6, 'sábado']
         ]);
 
-        document.write('<p>Hoje é ' + diasMap.get(dataDeHoje) + '.</p>');
+        // Vantagens: 
+        // - posso declarar os valores fora de ordem
+        // - não fica associado a um índice que inicia em 0
 
+        document.write('<p>Hoje é ' + mapaDeDias.get(dataDeHoje) + '.</p>');
 
     </script>
 </body>
